@@ -1,0 +1,12 @@
+** Documentação
+https://react.dev/
+
+https://reactnative.dev/
+
+
+
+** Emulador
+EXPO cli
+Emular android
+
+https://expo.dev/
