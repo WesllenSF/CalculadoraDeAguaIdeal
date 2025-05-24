@@ -1,5 +1,5 @@
 
-import { StyleSheet, Text, View ,TextInput, TouchableOpacity, ImageBackground} from 'react-native';
+import { StyleSheet, Text, View ,TextInput, TouchableOpacity, Image} from 'react-native';
 import { useState } from 'react';
 
 export default function App() {
@@ -22,8 +22,18 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      
+
       <Text style={styles.titulo}>Calculadora de Água</Text>
+
+        <View>
+          <Image
+          source={{ 
+            uri: 'https://img.pikbest.com/origin/09/23/31/696pIkbEsTchC.png!sw800'
+           }}
+
+          style={{ width: 100, height: 100 }}
+          />
+        </View>
 
         <View>
             <Text style={styles.label}></Text>
@@ -62,7 +72,6 @@ export default function App() {
               </View>
             )}
         </View>
-
     </View>
   );
 }
