@@ -16,24 +16,24 @@ export default function App() {
 
     const agua = pesoNum * 0.035;
 
-    setResultado(`${nomeText} você deve beber aproximadamente ${agua.toFixed(2)} litros de água por dia.`);
+    setResultado(`${nomeText} Você deve beber aproximadamente ${agua.toFixed(2)} litros de água por dia.`);
 
   }
 
   return (
     <View style={styles.container}>
 
+          <View>
+            <Image
+            source={{ 
+              uri: 'https://img.freepik.com/vetores-premium/dia-mundial-da-agua-vector-gratuito-com-sorriso-bonito-agua-salvar-a-terra-desenho-animado-ilustracao-isolada_1113582-1109.jpg?semt=ais_hybrid&w=740'
+            }}
+            style={{marginBottom:25, width: 150, height: 150 }}
+            />
+          </View>
+
+
       <Text style={styles.titulo}>Calculadora de Água</Text>
-
-        <View>
-          <Image
-          source={{ 
-            uri: 'https://img.pikbest.com/origin/09/23/31/696pIkbEsTchC.png!sw800'
-           }}
-
-          style={{ width: 100, height: 100 }}
-          />
-        </View>
 
         <View>
             <Text style={styles.label}></Text>
@@ -88,9 +88,10 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#f0f8ff',
+    backgroundColor: '#a4f3fc',
     alignItems: 'center',
     justifyContent: 'center',
+    fontFamily: 'Roboto',
   },
   input: {
     backgroundColor: 'white',
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
   },
   titulo: {
     color: 'black',
-    marginBottom: 80,
+    marginBottom: 50,
     fontSize: 50,
     textAlign: 'center',
   },
